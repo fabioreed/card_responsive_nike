@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #141516;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    width: 450px;
+    height: 600px;
+
+    border-radius: 8px;
+
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 80px auto;
+    background-color: #fff;
+}
+
+.card > figure {
+    background-color: #f5f5f5;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.new {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    border-radius: 4px;
+    padding: 4px 12px; 
+
+    background-color: #364FC7;
+    color: #fff;
+}
+
+.title, .colors {
+    margin: 30px 20px;
+}
+
+.colors {
+    font-weight: bold;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.black, .green, .blue {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.black {
+    background: #212529;
+    
+}
+
+.green {
+    background: #0B7285;
+}
+
+.blue {
+    background: #364FC7;
+    margin-rigth: 100%;
+}
+
+.size_container {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.size_container > span {
+    display: flex;
+    margin: 0 7px;
+    padding: 4px 8px;
+
+    background: #F1F3F5;
+    color: #212529;
+    border-radius: 4px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price {
+    margin: 35px 20px;
+    display: flex;
+    gap: 19px;
+}
+
+.price span {
+    font-weight: bold;
+}
+
+#risco {
+    text-decoration-line: line-through;
+    color: #ADB5BD;
+}
+
+.btn {
+    display: flex;
+    margin: 20px 20px 30px 20px;
+    gap: 15px;
+
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+}
+
+.btn button {
+    padding: 10px 27px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #212529;
+    border-radius: 8px;
+    color: #212529;
+    font-weight: bold;
+}
+
+.btn button:hover {
+    background: #212529;
+    color: #fff;
+}
+
+@media(max-width: 425px) {
+    .btn {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: 20px;
+        left: -03px;
+
+        width: 90%;
+    }
+
+    .card {
+        width: 332px;
+        height: 600px;
+    }
+
+    .card > figure > img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .title{
+        font-size: 19px;
+    }
+
+    .title_colors {
+        font-size: 15px;
+    }
+
+    .colors > div {
+        width: 24px;
+        height: 24px;
+    }
+
+    .size_container > h3 {
+        font-size: 15px;
+    }
+
+    .size_container > span {
+        font-size: 12px;
+    }
+
+    .price > span {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 222px) {
+    .container {
+        width: 222px;
+    }
+}
